@@ -4,7 +4,7 @@
 
 #define NAMESPACE @"flycar_bluetooth"
 
-@interface FlutterBluetoothBasicPlugin : NSObject<FlutterPlugin, CBCentralManagerDelegate, CBPeripheralDelegate>
+@interface FlycarBluetoothPlugin : NSObject<FlutterPlugin, CBCentralManagerDelegate, CBPeripheralDelegate>
 @property(nonatomic,copy)ConnectDeviceState state;
 @end
 

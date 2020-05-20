@@ -33,8 +33,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Vector;
 
-/** FlutterBluetoothBasicPlugin */
-public class FlutterBluetoothBasicPlugin implements MethodCallHandler, RequestPermissionsResultListener {
+/** FlycarBluetoothPlugin */
+public class FlycarBluetoothPlugin implements MethodCallHandler, RequestPermissionsResultListener {
   private static final String TAG = "BluetoothBasicPlugin";
   private int id = 0;
   private ThreadPool threadPool;
@@ -51,11 +51,11 @@ public class FlutterBluetoothBasicPlugin implements MethodCallHandler, RequestPe
   private Result pendingResult;
 
   public static void registerWith(Registrar registrar) {
-    final FlutterBluetoothBasicPlugin instance = new FlutterBluetoothBasicPlugin(registrar);
+    final FlycarBluetoothPlugin instance = new FlycarBluetoothPlugin(registrar);
     registrar.addRequestPermissionsResultListener(instance);
   }
 
-  FlutterBluetoothBasicPlugin(Registrar r){
+  FlycarBluetoothPlugin(Registrar r){
     this.registrar = r;
     this.activity = r.activity();
     this.channel = new MethodChannel(registrar.messenger(), NAMESPACE + "/methods");

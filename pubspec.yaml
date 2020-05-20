@@ -1,6 +1,6 @@
 name: flycar_bluetooth
 description: Flutter plugin that allows to find bluetooth devices & send raw bytes data
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/Blekercm/flycar_bluetooth.git
 
 environment:
@@ -24,6 +24,6 @@ flutter:
     platforms:
       android:
         package: es.flycarapp.flycar_bluetooth
-        pluginClass: FlutterBluetoothBasicPlugin
+        pluginClass: FlycarBluetoothPlugin
       ios:
-        pluginClass: FlutterBluetoothBasicPlugin
+        pluginClass: FlycarBluetoothPlugin

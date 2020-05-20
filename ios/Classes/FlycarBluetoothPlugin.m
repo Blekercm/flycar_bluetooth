@@ -1,20 +1,20 @@
-#import "FlutterBluetoothBasicPlugin.h"
+#import "FlycarBluetoothPlugin.h"
 #import "ConnecterManager.h"
 
-@interface FlutterBluetoothBasicPlugin ()
+@interface FlycarBluetoothPlugin ()
 @property(nonatomic, retain) NSObject<FlutterPluginRegistrar> *registrar;
 @property(nonatomic, retain) FlutterMethodChannel *channel;
 @property(nonatomic, retain) BluetoothPrintStreamHandler *stateStreamHandler;
 @property(nonatomic) NSMutableDictionary *scannedPeripherals;
 @end
 
-@implementation FlutterBluetoothBasicPlugin
+@implementation FlycarBluetoothPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FlutterMethodChannel* channel = [FlutterMethodChannel
       methodChannelWithName:NAMESPACE @"/methods"
             binaryMessenger:[registrar messenger]];
   FlutterEventChannel* stateChannel = [FlutterEventChannel eventChannelWithName:NAMESPACE @"/state" binaryMessenger:[registrar messenger]];
-  FlutterBluetoothBasicPlugin* instance = [[FlutterBluetoothBasicPlugin alloc] init];
+  FlycarBluetoothPlugin* instance = [[FlycarBluetoothPlugin alloc] init];
 
   instance.channel = channel;
   instance.scannedPeripherals = [NSMutableDictionary new];

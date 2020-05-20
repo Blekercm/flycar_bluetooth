@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:E./AndroidProyectos/BLUETOOH_BASIC_LIB/flycar_bluetooth/android/libs/gprintersdkv2.jar:unspecified@jar" type="AndroidModuleLibraryType">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android/libs/gprintersdkv2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
