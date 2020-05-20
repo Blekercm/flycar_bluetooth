@@ -1,0 +1,22 @@
+name: flycar_bluetooth_example
+description: Demonstrates how to use the flycar_bluetooth plugin.
+publish_to: 'none'
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.3
+  path_provider: ^1.6.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flycar_bluetooth:
+    path: ../
+
+flutter:
+  uses-material-design: true
